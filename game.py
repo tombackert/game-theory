@@ -26,7 +26,4 @@ class PrisonersDilemma:
             strategy1_score += score1
             strategy2_score += score2
             self.results.append((strategy1, strategy2, score1, score2))
-        return strategy1_score, strategy2_score
-
-    def get_results(self):
-        return self.results
+        return strategy1_score, strategy2_score, self.results
