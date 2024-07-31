@@ -14,6 +14,6 @@ Repo for experimenting with the Repeated Prisoner's Dilemma game based on Robert
 | Graaskamp            | Plays like TFT but defects in the 50th round.
 
 #### References:
-- [Veritasium](https://youtu.be/mScpHTIi-kM?si=YPWhvPgj4how0AwX)
+- [Veritasium Video](https://youtu.be/mScpHTIi-kM?si=YPWhvPgj4how0AwX)
 - [Stanford on Prisoner’s Dilemma](https://plato.stanford.edu/entries/prisoner-dilemma/index.html#return)
 - [Stanford Strategies](https://plato.stanford.edu/entries/prisoner-dilemma/strategy-table.html#:~:text=A%20good%20strategy%20for%20the,reduces%20the%20average%20payoff%20of)
