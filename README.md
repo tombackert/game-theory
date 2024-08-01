@@ -34,15 +34,55 @@ By analyzing the performance and interactions of these strategies, we can better
 
 ## Strategies implemented
 
-| Strategy             | Description
-|:---------------------|:--------------------------
-| Always Cooperate     | Cooperates unconditionally.
-| Always Defect        | Defects unconditionally.
-| Random               | Chooses probabilistically.
-| Tit for Tat          | Cooperates on the first round and imitates its opponent's previous move thereafter.
-| Friedmann            | Cooperates until its opponent has defected once, and then defects for the rest of the game.
-| Joss                 | Plays like TFT but defects every 10% of the time.
-| Graaskamp            | Plays like TFT but defects in the 50th round.
+| Strategy                   | Description
+|:---------------------------|:--------------------------
+| Always Cooperate           | Cooperates unconditionally.
+| Always Defect              | Defects unconditionally.
+| Random                     | Chooses probabilistically.
+| Tit for Tat                | Cooperates on the first round and imitates its opponent's previous move thereafter.
+| Friedmann                  | Cooperates until its opponent has defected once, and then defects for the rest of the game.
+| Joss                       | Plays like TFT but defects every 10% of the time.
+| Graaskamp                  | Plays like TFT but defects in the 50th round.
+| Probability p Cooperator   | Cooperates with a probability p (example p=0.5).
+| Suspicious Tit for Tat     | Defects on the first round and imitates its opponent's previous move thereafter.
+| Generous Tit for Tat       | Plays like TFT but occasionally forgives defections.
+| Gradual Tit for Tat        | Increases cooperation slowly after defections.
+| Imperfect Tit for Tat      | Imitates opponent's last move with some probability of error.
+| Tit for Two Tats           | Defects only after two consecutive defections by the opponent.
+| Two Tits for Tat           | Defects twice after a single defection by the opponent.
+| Omega Tit for Tat          | More complex version of TFT with additional rules.
+| Grim Trigger               | Cooperates until the opponent defects once, then defects forever.
+| Backstabber                | Cooperates for the first few rounds, then defects.
+| Random Backstabber         | Cooperates for a random number of rounds, then defects.
+| Periodic Defector          | Defects at regular intervals.
+| Vindictive                 | Cooperates until the opponent defects once, then defects forever.
+| Bullying                   | Defects initially, then cooperates if the opponent never defects.
+
+## Leaderboard
+
+Place      | Strategy                                 | Average score                 
+-----------|------------------------------------------|-----------------------------------
+1          | Imperfect Tit For Tat                    | 2529                          
+2          | Generous Tit For Tat                     | 2496                          
+3          | Omega Tit For Tat                        | 2435                          
+4          | Tit For Two Tats                         | 2403                          
+5          | Gradual Tit For Tat                      | 2347                          
+6          | Tit For Tat                              | 2344                          
+7          | Always Cooperate                         | 2332                          
+8          | Grim Trigger                             | 2232                          
+9          | Friedman                                 | 2229                          
+10         | Vindictive                               | 2227                          
+11         | Periodic Defector                        | 2040                          
+12         | Random Strategy                          | 1965                          
+13         | Graaskamp                                | 1959                          
+14         | Two Tits For Tat                         | 1866                          
+15         | Suspicious Tit For Tat                   | 1863                          
+16         | Backstabber                              | 1744                          
+17         | Random Backstabber                       | 1737                          
+18         | Probability P Cooperator                 | 1726                          
+19         | Joss                                     | 1590                          
+20         | Bullying                                 | 1556                          
+21         | Always Defect                            | 1546
 
 ## References
 
