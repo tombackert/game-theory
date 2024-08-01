@@ -58,33 +58,19 @@ By analyzing the performance and interactions of these strategies, we can better
 | Vindictive                 | Cooperates until the opponent defects once, then defects forever.
 | Bullying                   | Defects initially, then cooperates if the opponent never defects.
 
+## Tournament
+
+In this tournament, various strategies for the Repeated Prisoner's Dilemma will compete against each other to evaluate their relative strengths and effectiveness. Each strategy will be pitted against every other strategy to determine how well it performs across a range of scenarios. The results will be recorded and analyzed to identify which strategies tend to achieve better outcomes and which may be less effective.
+
+By conducting this tournament, we can gain valuable insights into how different strategies perform in the long run and which approaches prove to be particularly robust or vulnerable to certain tactics. Those insights can then be applied in real world scenarios.
+
 ## Leaderboard
 
-Place      | Strategy                                 | Average score
------------|------------------------------------------|-----------------------------------
-1          | Imperfect Tit For Tat                    | 2529
-2          | Generous Tit For Tat                     | 2496
-3          | Omega Tit For Tat                        | 2435
-4          | Tit For Two Tats                         | 2403
-5          | Gradual Tit For Tat                      | 2347
-6          | Tit For Tat                              | 2344
-7          | Always Cooperate                         | 2332
-8          | Grim Trigger                             | 2232
-9          | Friedman                                 | 2229
-10         | Vindictive                               | 2227
-11         | Periodic Defector                        | 2040
-12         | Random Strategy                          | 1965
-13         | Graaskamp                                | 1959
-14         | Two Tits For Tat                         | 1866
-15         | Suspicious Tit For Tat                   | 1863
-16         | Backstabber                              | 1744
-17         | Random Backstabber                       | 1737
-18         | Probability P Cooperator                 | 1726
-19         | Joss                                     | 1590
-20         | Bullying                                 | 1556
-21         | Always Defect                            | 1546
+![grafic](https://github.com/tombackert/game-theory/blob/main/average-score-per-strategy.png)
 
-![grafic](game-theory/average-score-per-strategy.png)
+## Results
+
+> Be nice, be forgiving, but don't be a pushover.
 
 ## References
 
