@@ -3,7 +3,7 @@ from strategies import *
 
 ### Game parameters
 rounds = 200
-strategy1 = tit_for_tat
+strategy1 = random_strategy
 strategy2 = joss
 
 

@@ -1,19 +1,33 @@
 from game import PrisonersDilemma
-import strategies as strat
+from strategies import *
 import matplotlib.pyplot as plt
 
 # Define the number of rounds
-rounds = 200
+rounds = 1000
 
 # Define the strategies
 strategy_list = [
-    strat.always_cooperate,
-    strat.always_defect,
-    strat.tit_for_tat,
-    strat.friedman,
-    strat.joss,
-    strat.graaskamp,
-    strat.random_strategy
+    always_cooperate,
+    always_defect,
+    tit_for_tat,
+    friedman,
+    joss,
+    graaskamp,
+    random_strategy,
+    probability_p_cooperator,
+    suspicious_tit_for_tat,
+    generous_tit_for_tat,
+    gradual_tit_for_tat,
+    imperfect_tit_for_tat,
+    tit_for_two_tats,
+    two_tits_for_tat,
+    omega_tit_for_tat,
+    grim_trigger,
+    backstabber,
+    random_backstabber,
+    periodic_defector,
+    vindictive,
+    bullying
 ]
 
 # Function to get the strategy name
@@ -32,13 +46,6 @@ for i, strategy1 in enumerate(strategy_list):
         strategy1_name = get_strategy_name(strategy1)
         strategy2_name = get_strategy_name(strategy2)
         results_summary.append((strategy1_name, strategy1_score, strategy2_name, strategy2_score))
-
-
-
-
-
-
-    
 
 # Print summary of all matches
 print("#"*90)
@@ -68,10 +75,10 @@ average_score_per_strategy = dict(sorted(average_score_per_strategy.items(), key
 print("Average scores per strategy:")
 print()
 
-print(f"{'Place':<10} | {'Strategy':<20} | {'Average score':<20}")
-print("-" * 10 + "-|-" + "-" * 20 + "-|-" + "-" * 20)
+print(f"{'Place':<10} | {'Strategy':<40} | {'Average score':<30}")
+print("-" * 10 + "-|-" + "-" * 40 + "-|-" + "-" * 34)
 for index, strategy in enumerate(average_score_per_strategy, start=1):
-    print(f"{index:<10} | {strategy:<20} | {round(average_score_per_strategy[strategy]):<20}")
+    print(f"{index:<10} | {strategy:<40} | {round(average_score_per_strategy[strategy]):<30}")
 
 print()
-print("#"*90)
+print()
