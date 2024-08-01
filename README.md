@@ -60,29 +60,31 @@ By analyzing the performance and interactions of these strategies, we can better
 
 ## Leaderboard
 
-Place      | Strategy                                 | Average score                 
+Place      | Strategy                                 | Average score
 -----------|------------------------------------------|-----------------------------------
-1          | Imperfect Tit For Tat                    | 2529                          
-2          | Generous Tit For Tat                     | 2496                          
-3          | Omega Tit For Tat                        | 2435                          
-4          | Tit For Two Tats                         | 2403                          
-5          | Gradual Tit For Tat                      | 2347                          
-6          | Tit For Tat                              | 2344                          
-7          | Always Cooperate                         | 2332                          
-8          | Grim Trigger                             | 2232                          
-9          | Friedman                                 | 2229                          
-10         | Vindictive                               | 2227                          
-11         | Periodic Defector                        | 2040                          
-12         | Random Strategy                          | 1965                          
-13         | Graaskamp                                | 1959                          
-14         | Two Tits For Tat                         | 1866                          
-15         | Suspicious Tit For Tat                   | 1863                          
-16         | Backstabber                              | 1744                          
-17         | Random Backstabber                       | 1737                          
-18         | Probability P Cooperator                 | 1726                          
-19         | Joss                                     | 1590                          
-20         | Bullying                                 | 1556                          
+1          | Imperfect Tit For Tat                    | 2529
+2          | Generous Tit For Tat                     | 2496
+3          | Omega Tit For Tat                        | 2435
+4          | Tit For Two Tats                         | 2403
+5          | Gradual Tit For Tat                      | 2347
+6          | Tit For Tat                              | 2344
+7          | Always Cooperate                         | 2332
+8          | Grim Trigger                             | 2232
+9          | Friedman                                 | 2229
+10         | Vindictive                               | 2227
+11         | Periodic Defector                        | 2040
+12         | Random Strategy                          | 1965
+13         | Graaskamp                                | 1959
+14         | Two Tits For Tat                         | 1866
+15         | Suspicious Tit For Tat                   | 1863
+16         | Backstabber                              | 1744
+17         | Random Backstabber                       | 1737
+18         | Probability P Cooperator                 | 1726
+19         | Joss                                     | 1590
+20         | Bullying                                 | 1556
 21         | Always Defect                            | 1546
+
+![grafic](game-theory/average-score-per-strategy.png)
 
 ## References
 
