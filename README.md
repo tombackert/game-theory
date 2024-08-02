@@ -66,7 +66,7 @@ By conducting this tournament, we can gain valuable insights into how different 
 
 ### Score Matrix of every Strategy against each other
 
-![score-matrix]()
+![score-matrix](https://github.com/tombackert/game-theory/blob/main/score-matrix.png)
 
 ## Leaderboard
 
