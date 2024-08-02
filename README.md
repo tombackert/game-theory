@@ -68,7 +68,7 @@ By conducting this tournament, we can gain valuable insights into how different 
 
 ![score-matrix](https://github.com/tombackert/game-theory/blob/main/score-matrix.png)
 
-## Leaderboard
+### Leaderboard
 
 ![average-score-per-strategy](https://github.com/tombackert/game-theory/blob/main/average-score-per-strategy.png)
 
