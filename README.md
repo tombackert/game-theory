@@ -64,9 +64,13 @@ In this tournament, various strategies for the Repeated Prisoner's Dilemma will 
 
 By conducting this tournament, we can gain valuable insights into how different strategies perform in the long run and which approaches prove to be particularly robust or vulnerable to certain tactics. Those insights can then be applied in real world scenarios.
 
+### Score Matrix of every Strategy against each other
+
+![score-matrix]()
+
 ## Leaderboard
 
-![grafic](https://github.com/tombackert/game-theory/blob/main/average-score-per-strategy.png)
+![average-score-per-strategy](https://github.com/tombackert/game-theory/blob/main/average-score-per-strategy.png)
 
 ## Results
 

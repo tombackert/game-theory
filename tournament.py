@@ -48,7 +48,7 @@ for i, strategy1 in enumerate(strategy_list):
         strategy2_name = get_strategy_name(strategy2)
         results_summary.append((strategy1_name, strategy1_score, strategy2_name, strategy2_score))
 
-# Print summary of all matches
+### Terminal Output - Strategy vs Strategy
 print()
 print("Summary of all matches:")
 print()
@@ -59,7 +59,7 @@ for match in results_summary:
 
 print("-"*90)
 
-
+### Terminal Output - Average Score per Strategy
 # Get values for each strategy
 results_per_strategy = {get_strategy_name(strategy): [] for strategy in strategy_list}
 
@@ -84,15 +84,14 @@ for index, strategy in enumerate(average_score_per_strategy, start=1):
 print()
 print()
 
-
-# Visualization with colored bars
+### Leaderboard Plot - Average Score per Strategy
 strategies = list(average_score_per_strategy.keys())
 scores = list(average_score_per_strategy.values())
 
-colors = plt.cm.viridis(np.linspace(0, 1, len(strategies)))
+colors = plt.cm.viridis(np.linspace(0, 1, len(strategies))) # Viridis color map
 
 plt.figure(figsize=(14, 8))
-bars = plt.barh(strategies, scores, color=colors)
+bars = plt.barh(strategies, scores, color=colors[::-1])
 plt.xlabel('Average Score')
 plt.ylabel('Strategy')
 plt.title('Average Score per Strategy in Repeated Prisoner\'s Dilemma')
@@ -103,3 +102,23 @@ for bar, score in zip(bars, scores):
     plt.text(bar.get_width(), bar.get_y() + bar.get_height()/2, f'{round(score):}', va='center')
 
 plt.show()
+
+### Matrix Plot - Strategy vs Strategy
+strategies_names = [get_strategy_name(strategy) for strategy in strategy_list]
+scores_matrix = np.zeros((len(strategy_list), len(strategy_list)))
+
+for i, strategy1 in enumerate(strategy_list):
+    for j, strategy2 in enumerate(strategy_list):
+        for result in results_summary:
+            if result[0] == get_strategy_name(strategy1) and result[2] == get_strategy_name(strategy2):
+                scores_matrix[i, j] = result[1]
+
+plt.figure(figsize=(12, 12))
+plt.imshow(scores_matrix, cmap='viridis', interpolation='nearest')
+plt.colorbar(label='Score')
+plt.xticks(ticks=np.arange(len(strategies_names)), labels=strategies_names, rotation=90)
+plt.yticks(ticks=np.arange(len(strategies_names)), labels=strategies_names)
+plt.xlabel('Opponent Strategy')
+plt.ylabel('Strategy')
+plt.title('Score Matrix for Each Strategy Against Each Other')
+# plt.show()
